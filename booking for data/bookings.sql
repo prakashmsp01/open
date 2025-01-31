@@ -1,0 +1,10 @@
+CREATE TABLE bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullName VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    checkIn DATE NOT NULL,
+    checkOut DATE NOT NULL,
+    food VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
